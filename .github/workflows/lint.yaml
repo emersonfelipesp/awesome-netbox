@@ -5,6 +5,13 @@ on:
         branches:
             - main
 
+permissions:
+    contents: read
+
+concurrency:
+    group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.event.pull_request.number || github.run_id }}
+    cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
     awesome-lint:
       strategy:
@@ -15,9 +22,10 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: "checkout repo"
-          uses: actions/checkout@v2
+          uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
           with:
             fetch-depth: 0
+            persist-credentials: false
         - name: asdf_install
           uses: asdf-vm/actions/install@v1
         - name: "linting: ${{ matrix.files }}"
@@ -31,9 +39,10 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: "checkout repo"
-          uses: actions/checkout@v2.0.0
+          uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
           with:
             fetch-depth: 0
+            persist-credentials: false
         - name: "setup ruby"
           uses: ruby/setup-ruby@v1
           with:
