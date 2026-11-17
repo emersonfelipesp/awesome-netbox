@@ -46,7 +46,7 @@ A curated list of awesome resources related to NetBox!
 ## Featured (new releases)
 
 <!--lint ignore double-link-->
-- [Zero to Hero Course](https://zerotohero.netbox.dev/) - A short course designed to take new NetBox users from ‘Zero to Hero’.
+- [Zero to Hero Course](https://zerotohero.netbox.dev/) - A short course designed to take new NetBox users from Zero to Hero.
 
 ## Official Docs & Quickstarts
 
@@ -54,11 +54,12 @@ A curated list of awesome resources related to NetBox!
 - 📖 [NetBox Documentation](https://netboxlabs.com/docs/) - Official NetBox Documentation.
 - 🔧 [NetBox Demo Instance](https://demo.netbox.dev/) - Demo instance of NetBox (restarted daily).
 - 📖 [NetBox Plugin Tutorial](https://github.com/netbox-community/netbox-plugin-tutorial) - NetBox Plugin Development Tutorial.
+- [LDAP Configuration](https://netboxlabs.com/docs/netbox/installation/6-ldap/) - Official LDAP and Active Directory configuration guide.
 <!--lint enable double-link-->
 
 ## Plugins
 
-- [netboxlabs.com/netbox-plugins/](https://netboxlabs.com/netbox-plugins/) - NetBox Community Plugins
+- [netboxlabs.com/netbox-plugins/](https://netboxlabs.com/netbox-plugins/) - NetBox Community Plugins.
 
 ## Ansible
 
@@ -111,13 +112,12 @@ A curated list of awesome resources related to NetBox!
 
 <!--lint disable double-link-->
 - [NetBox Plugin Tutorial](https://github.com/netbox-community/netbox-plugin-tutorial) - NetBox Plugin Development Tutorial.
-- [Zero to Hero Course](https://zerotohero.netbox.dev/) - A short course designed to take new NetBox users from ‘Zero to Hero’.
+- [Zero to Hero Course](https://zerotohero.netbox.dev/) - A short course designed to take new NetBox users from Zero to Hero.
 <!--lint enable double-link-->
 
 ### Blogs
 
 - [Integrating Okta SSO with NetBox](https://www.oasys.net/posts/okta-sso-with-netbox/) - Instructions for configuring NetBox and Okta for native SSO authentication.
-- [Netbox Active Directory/LDAP Integration](https://www.thierolf.org/blog/2021/netbox-active-directoryldap-integration/) - How to setup Netbox with Active Directory as backend for users and groups.
 - [NetBox NAPALM automation with bastion host](https://www.oasys.net/posts/netbox-napalm-automation-with-bastion-host/) - Configuring the NAPALM integration to use a SSH proxy.
 - [NetBox: How to run it on your Synology](https://kevenaar.name/netbox-how-to-run-it-on-your-synology/) - Installing Netbox on your Synology NAS.
 
